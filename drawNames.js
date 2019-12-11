@@ -25,7 +25,7 @@ arr = shuffle(arr);
 const promisedText = (receiver, giver) => {
   return new Promise((resolve, reject) => {
     let text = `Merry Christmas ${giver}! You will give a gift to ${receiver}.`
-    fs.writeFile(`./holdFiles/${giver}.txt`, text, (error) => {
+    fs.writeFile(`./drawn-names/${giver}.txt`, text, (error) => {
       if (error) {
         reject("failed to write to the file");
       }
